@@ -1,0 +1,1 @@
+Update Users set IsAnonymous =  @IsAnonymous/*bit*/   where UserName = @UserName/*nvarchar(MAX)*/

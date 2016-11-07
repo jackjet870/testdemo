@@ -1,0 +1,33 @@
+﻿{
+    "title": "JsonSchema of DataModel",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "Name": { "type": "string" },
+        "Note": { "type": [ "string", "null" ] },
+        "ItemType": { "type": "string" },
+        "Items": {
+            "type": [ "array", "null" ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Name": { "type": "string" },
+                    "DataType": { "type": "string" },
+                    "DisplayName": { "type": "string" },
+                    "Require": { "type": [ "string", "null" ] },
+                    "ConstraintType": { "type": ["string", "null"]  },
+                    "Constraints": {
+                        "type": [ "array", "null" ],
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "Name": { "type": "string" },
+                                "Value": { "type": [ "string", "number", "boolean", "null" ] }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

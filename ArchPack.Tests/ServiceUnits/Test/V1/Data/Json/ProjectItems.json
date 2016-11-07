@@ -1,0 +1,135 @@
+﻿[
+    {
+        "ProjectItemId": 1,
+        "ProjectId": 1,
+        "Name": "UIPattern",
+        "ProjectItemType": "UIPattern",
+        "Note": "画面パターンです",
+        "Detail": "{\"Name\":\"UIPattern\",\"Note\":\"Define ui patterns\",\"ItemType\":\"UIPattern\",\"Items\":[{\"Name\":\"SearchList\",\"Note\":\"\",\"DisplaySections\":[{\"Name\":\"Header\",\"DisplayItemType\":\"SingleItems\"},{\"Name\":\"Detail\",\"DisplayItemType\":\"Table\"}],\"HtmlTemplate\":{\"Files\":[\"~/ServiceUnits/Develop/V1/Templates/SearchList/SearchList.aspx\"]},\"JsTemplate\":{\"Files\":[\"~/ServiceUnits/Develop/V1/Templates/SearchList/SearchList.js\"]},\"TestCaseTemplate\":{\"Files\":[\"~/ServiceUnits/Develop/V1/Templates/SearchList/testcase.json\"]}},{\"Name\":\"HeaderDetail\",\"Note\":\"\",\"DisplaySections\":[{\"Name\":\"Header\",\"DisplayItemType\":\"SingleItems\"},{\"Name\":\"Detail\",\"DisplayItemType\":\"Table\"}],\"HtmlTemplate\":{\"Files\":[\"~/ServiceUnits/Develop/V1/Templates/HeaderDetail/HeaderDetail.aspx\"]},\"JsTemplate\":{\"Files\":[\"~/ServiceUnits/Develop/V1/Templates/HeaderDetail/HeaderDetail.js\"]},\"TestCaseTemplate\":{\"Files\":[\"~/ServiceUnits/Develop/V1/Templates/HeaderDetail/testcase.json\"]}}]}",
+        "CreatedUser": "Admin",
+        "CreatedDate": null,
+        "UpdatedUser": null,
+        "UpdatedDate": null,
+        "ts": "AAAAAAAAB9E="
+
+    },
+    {
+        "ProjectItemId": 2,
+        "ProjectId": 2,
+        "Name": "UIPattern",
+        "ProjectItemType": "UIPattern",
+        "Note": "画面パターンです",
+        "Detail": "{\"Name\":\"UIPattern\",\"Note\":\"Define ui patterns\",\"ItemType\":\"UIPattern\",\"Items\":[{\"Name\":\"SearchList\",\"Note\":\"\",\"DisplaySections\":[{\"Name\":\"Header\",\"DisplayItemType\":\"SingleItems\"},{\"Name\":\"Detail\",\"DisplayItemType\":\"Table\"}],\"HtmlTemplate\":{\"Files\":[\"~/ServiceUnits/Develop/V1/Templates/SearchList/SearchList.aspx\"]},\"JsTemplate\":{\"Files\":[\"~/ServiceUnits/Develop/V1/Templates/SearchList/SearchList.js\"]},\"TestCaseTemplate\":{\"Files\":[\"~/ServiceUnits/Develop/V1/Templates/SearchList/testcase.json\"]}},{\"Name\":\"HeaderDetail\",\"Note\":\"\",\"DisplaySections\":[{\"Name\":\"Header\",\"DisplayItemType\":\"SingleItems\"},{\"Name\":\"Detail\",\"DisplayItemType\":\"Table\"}],\"HtmlTemplate\":{\"Files\":[\"~/ServiceUnits/Develop/V1/Templates/HeaderDetail/HeaderDetail.aspx\"]},\"JsTemplate\":{\"Files\":[\"~/ServiceUnits/Develop/V1/Templates/HeaderDetail/HeaderDetail.js\"]},\"TestCaseTemplate\":{\"Files\":[\"~/ServiceUnits/Develop/V1/Templates/HeaderDetail/testcase.json\"]}}]}",
+        "CreatedUser": "Admin",
+        "CreatedDate": null,
+        "UpdatedUser": null,
+        "UpdatedDate": null,
+        "ts": "AAAAAAAAB9I="
+
+    },
+    {
+        "ProjectItemId": 3,
+        "ProjectId": 0,
+        "Name": "ControlTypes",
+        "ProjectItemType": "MetaData.ControlTypes",
+        "Note": "UIで利用するコントロール型の定義です",
+        "Detail": "[{\"Name\":\"Text\",\"Data\":{}},{\"Name\":\"MultiLineText\",\"Data\":{}},{\"Name\":\"DropdownList\",\"Data\":{}},{\"Name\":\"List\",\"Data\":{}},{\"Name\":\"Label\",\"Data\":{}}]",
+        "CreatedUser": "Admin",
+        "CreatedDate": null,
+        "UpdatedUser": null,
+        "UpdatedDate": null,
+        "ts": "AAAAAAAAB9M="
+
+    },
+    {
+        "ProjectItemId": 4,
+        "ProjectId": 0,
+        "Name": "Validations",
+        "ProjectItemType": "MetaData.Validations",
+        "Note": "バリデーションの定義です。",
+        "Detail": "[{\"Name\":\"Required\",\"Data\":{}},{\"Name\":\"MaxLength\",\"Data\":{}},{\"Name\":\"MinLength\",\"Data\":{}},{\"Name\":\"Max\",\"Data\":{}},{\"Name\":\"Min\",\"Data\":{}},{\"Name\":\"Format\",\"Data\":{}},{\"Name\":\"Regex\",\"Data\":{}}]",
+        "CreatedUser": "Admin",
+        "CreatedDate": null,
+        "UpdatedUser": null,
+        "UpdatedDate": null,
+        "ts": "AAAAAAAAB9Q="
+    },
+    {
+        "ProjectItemId": 5,
+        "ProjectId": 0,
+        "Name": "DataTypes",
+        "ProjectItemType": "MetaData.DataTypes",
+        "Note": "データ型の定義です。",
+        "Detail": "[{\"Name\":\"Number\",\"Contraints\":{}},{\"Name\":\"String\",\"Contraints\":{}},{\"Name\":\"DateTime\",\"Contraints\":{}},{\"Name\":\"Boolean\",\"Contraints\":{}}]",
+        "CreatedUser": "Admin",
+        "CreatedDate": null,
+        "UpdatedUser": null,
+        "UpdatedDate": null,
+        "ts": "AAAAAAAAB9U="
+    },
+    {
+        "ProjectItemId": 6,
+        "ProjectId": 1,
+        "Name": "Company",
+        "ProjectItemType": "DataModel",
+        "Note": "Company Information",
+        "Detail": "{\"Name\":\"Company\",\"Note\":\"Company Information\",\"ItemType\":\"DataModel\",\"Items\":[{\"Name\":\"ID\",\"DataType\":\"Integer\",\"Require\":\"on\"},{\"Name\":\"Name\",\"DataType\":\"String\",\"Require\":\"on\"},{\"Name\":\"Address\",\"DataType\":\"String\",\"Require\":null}]}",
+        "CreatedUser": null,
+        "CreatedDate": null,
+        "UpdatedUser": "Admin",
+        "UpdatedDate": "2015-05-21T13:45:42+09:00",
+        "ts": "AAAAAAAAB9Y="
+    },
+    {
+        "ProjectItemId": 7,
+        "ProjectId": 1,
+        "Name": "Test Case Of Pattern",
+        "ProjectItemType": "TestCase",
+        "Note": null,
+        "Detail": "{\r\n  \"Name\": \"Test Case Of Pattern\",\r\n  \"Note\": null,\r\n  \"GenerateType\": \"SourcePattern\",\r\n  \"SourcePattern\": \"HeaderDetail\",\r\n  \"SourcePage\": null,\r\n  \"CSVFile\": null,\r\n  \"ItemType\": \"TestCase\",\r\n  \"PageID\": \"15\",\r\n  \"Items\": [\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"画面表示\",\r\n      \"TestItem\": \"初期表示\",\r\n      \"Content\": \"明細行\",\r\n      \"WhatToCheck\": \"ヘッダー行を表示\",\r\n      \"Note\": null,\r\n      \"Source\": \"Pattern\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"画面表示\",\r\n      \"TestItem\": \"初期表示\",\r\n      \"Content\": \"ウィンドウタイトル\",\r\n      \"WhatToCheck\": \"「002_旅費申請検索」と表示される\",\r\n      \"Note\": null,\r\n      \"Source\": \"Pattern\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"画面表示\",\r\n      \"TestItem\": \"初期表示\",\r\n      \"Content\": \"明細行\",\r\n      \"WhatToCheck\": \"ヘッダー行を表示\",\r\n      \"Note\": null,\r\n      \"Source\": \"Pattern\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"画面表示\",\r\n      \"TestItem\": \"初期表示\",\r\n      \"Content\": \"次を検索\",\r\n      \"WhatToCheck\": \"非表示\",\r\n      \"Note\": null,\r\n      \"Source\": \"Pattern\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"画面表示\",\r\n      \"TestItem\": \"初期表示\",\r\n      \"Content\": \"明細行\",\r\n      \"WhatToCheck\": \"ヘッダー行の下にスクロールバーを表示\",\r\n      \"Note\": null,\r\n      \"Source\": \"Pattern\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"画面表示\",\r\n      \"TestItem\": \"初期表示\",\r\n      \"Content\": \"明細行\",\r\n      \"WhatToCheck\": \"ヘッダー行の下にスクロールバーを表示\",\r\n      \"Note\": null,\r\n      \"Source\": \"Pattern\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"イベント\",\r\n      \"TestItem\": \"検索ボタンクリック\",\r\n      \"Content\": \"入力検証\",\r\n      \"WhatToCheck\": \"社員NOに5桁未満の値が入力されている場合エラーとなる\",\r\n      \"Note\": null,\r\n      \"Source\": \"Pattern\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"イベント\",\r\n      \"TestItem\": \"保存ボタンクリック\",\r\n      \"Content\": \"入力検証\",\r\n      \"WhatToCheck\": \"社員NOに5桁未満の値が入力されている場合エラーとなる\",\r\n      \"Note\": null,\r\n      \"Source\": \"Pattern\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"イベント\",\r\n      \"TestItem\": \"保存ボタンクリック\",\r\n      \"Content\": \"入力検証\",\r\n      \"WhatToCheck\": \"管理NOに数字以外が入力されている場合エラーとなる\",\r\n      \"Note\": null,\r\n      \"Source\": \"Pattern\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"イベント\",\r\n      \"TestItem\": \"削除ボタンクリック\",\r\n      \"Content\": \"選択処理\",\r\n      \"WhatToCheck\": \"明細行の左端が選択表示となる\",\r\n      \"Note\": null,\r\n      \"Source\": \"Pattern\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"イベント\",\r\n      \"TestItem\": \"削除ボタンクリック\",\r\n      \"Content\": \"画面遷移\",\r\n      \"WhatToCheck\": \"明細画面が新規登録モードで起動する\",\r\n      \"Note\": null,\r\n      \"Source\": \"Pattern\"\r\n    }\r\n  ]\r\n}",
+        "CreatedUser": "amimata",
+        "CreatedDate": "2015-06-08 09:54:37.1993081 +07:00",
+        "UpdatedUser": null,
+        "UpdatedDate": null,
+        "ts": "AAAAAAAAB9Z="
+    },
+    {
+        "ProjectItemId": 8,
+        "ProjectId": 1,
+        "Name": "Test Case Of Empty",
+        "ProjectItemType": "TestCase",
+        "Note": null,
+        "Detail": "{\r\n  \"Name\": \"Test Case Of Empty\",\r\n  \"Note\": null,\r\n  \"GenerateType\": \"Empty\",\r\n  \"CSVFile\": null,\r\n  \"ItemType\": \"TestCase\"\r\n}",
+        "CreatedUser": "amimata",
+        "CreatedDate": "2015-06-05 15:08:54.2880712 +07:00",
+        "UpdatedUser": null,
+        "UpdatedDate": null,
+        "ts": "AAAAAAAAB9U="
+    },
+    {
+        "ProjectItemId": 9,
+        "ProjectId": 1,
+        "Name": "Test Case Of Page",
+        "ProjectItemType": "TestCase",
+        "Note": null,
+        "Detail": "{\r\n  \"Name\": \"Test Case Of Page\",\r\n  \"Note\": null,\r\n  \"GenerateType\": \"SourcePage\",\r\n  \"SourcePattern\": \"SearchList\",\r\n  \"SourcePage\": \"test page 2\",\r\n  \"CSVFile\": null,\r\n  \"ItemType\": \"TestCase\",\r\n  \"PageID\": \"144\",\r\n  \"Items\": [\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"画面表示\",\r\n      \"TestItem\": \"初期表示\",\r\n      \"Content\": \"Name\",\r\n      \"WhatToCheck\": \"Name Default Value is default\",\r\n      \"Note\": null,\r\n      \"Source\": \"Page\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"画面表示\",\r\n      \"TestItem\": \"初期表示\",\r\n      \"Content\": \"Name\",\r\n      \"WhatToCheck\": \"Name Default Value is NA\",\r\n      \"Note\": null,\r\n      \"Source\": \"Page\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"画面表示\",\r\n      \"TestItem\": \"初期表示\",\r\n      \"Content\": \"Name\",\r\n      \"WhatToCheck\": \"Name Default Value is NA\",\r\n      \"Note\": null,\r\n      \"Source\": \"Page\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"画面表示\",\r\n      \"TestItem\": \"初期表示\",\r\n      \"Content\": \"明細行\",\r\n      \"WhatToCheck\": \"ヘッダー行を表示\",\r\n      \"Note\": null,\r\n      \"Source\": \"Pattern\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"画面表示\",\r\n      \"TestItem\": \"初期表示\",\r\n      \"Content\": \"ウィンドウタイトル\",\r\n      \"WhatToCheck\": \"「002_旅費申請検索」と表示される\",\r\n      \"Note\": null,\r\n      \"Source\": \"Pattern\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"画面表示\",\r\n      \"TestItem\": \"初期表示\",\r\n      \"Content\": \"明細行\",\r\n      \"WhatToCheck\": \"ヘッダー行を表示\",\r\n      \"Note\": null,\r\n      \"Source\": \"Pattern\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"画面表示\",\r\n      \"TestItem\": \"初期表示\",\r\n      \"Content\": \"次を検索\",\r\n      \"WhatToCheck\": \"非表示\",\r\n      \"Note\": null,\r\n      \"Source\": \"Pattern\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"画面表示\",\r\n      \"TestItem\": \"初期表示\",\r\n      \"Content\": \"明細行\",\r\n      \"WhatToCheck\": \"ヘッダー行の下にスクロールバーを表示\",\r\n      \"Note\": null,\r\n      \"Source\": \"Pattern\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"画面表示\",\r\n      \"TestItem\": \"初期表示\",\r\n      \"Content\": \"明細行\",\r\n      \"WhatToCheck\": \"ヘッダー行の下にスクロールバーを表示\",\r\n      \"Note\": null,\r\n      \"Source\": \"Pattern\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"イベント\",\r\n      \"TestItem\": \"検索ボタンクリック\",\r\n      \"Content\": \"ID\",\r\n      \"WhatToCheck\": \"ID is required\",\r\n      \"Note\": null,\r\n      \"Source\": \"Page\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"イベント\",\r\n      \"TestItem\": \"検索ボタンクリック\",\r\n      \"Content\": \"Name\",\r\n      \"WhatToCheck\": \"MaxLength of Name is 50\",\r\n      \"Note\": null,\r\n      \"Source\": \"Page\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"イベント\",\r\n      \"TestItem\": \"検索ボタンクリック\",\r\n      \"Content\": \"Name\",\r\n      \"WhatToCheck\": \"MinLength of Name is 2\",\r\n      \"Note\": null,\r\n      \"Source\": \"Page\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"イベント\",\r\n      \"TestItem\": \"検索ボタンクリック\",\r\n      \"Content\": \"Birthday\",\r\n      \"WhatToCheck\": \"Birthday is required\",\r\n      \"Note\": null,\r\n      \"Source\": \"Page\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"イベント\",\r\n      \"TestItem\": \"検索ボタンクリック\",\r\n      \"Content\": \"ID\",\r\n      \"WhatToCheck\": \"ID is required\",\r\n      \"Note\": null,\r\n      \"Source\": \"Page\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"イベント\",\r\n      \"TestItem\": \"検索ボタンクリック\",\r\n      \"Content\": \"Name\",\r\n      \"WhatToCheck\": \"MaxLength of Name is 50\",\r\n      \"Note\": null,\r\n      \"Source\": \"Page\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"イベント\",\r\n      \"TestItem\": \"検索ボタンクリック\",\r\n      \"Content\": \"Name\",\r\n      \"WhatToCheck\": \"MinLength of Name is 5\",\r\n      \"Note\": null,\r\n      \"Source\": \"Page\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"イベント\",\r\n      \"TestItem\": \"検索ボタンクリック\",\r\n      \"Content\": \"Birthday\",\r\n      \"WhatToCheck\": \"Birthday is required\",\r\n      \"Note\": null,\r\n      \"Source\": \"Page\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"イベント\",\r\n      \"TestItem\": \"検索ボタンクリック\",\r\n      \"Content\": \"ID\",\r\n      \"WhatToCheck\": \"ID is required\",\r\n      \"Note\": null,\r\n      \"Source\": \"Page\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"イベント\",\r\n      \"TestItem\": \"検索ボタンクリック\",\r\n      \"Content\": \"Name\",\r\n      \"WhatToCheck\": \"MaxLength of Name is 50\",\r\n      \"Note\": null,\r\n      \"Source\": \"Page\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"イベント\",\r\n      \"TestItem\": \"検索ボタンクリック\",\r\n      \"Content\": \"Name\",\r\n      \"WhatToCheck\": \"MinLength of Name is 5\",\r\n      \"Note\": null,\r\n      \"Source\": \"Page\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"イベント\",\r\n      \"TestItem\": \"検索ボタンクリック\",\r\n      \"Content\": \"入力検証\",\r\n      \"WhatToCheck\": \"社員NOに5桁未満の値が入力されている場合エラーとなる\",\r\n      \"Note\": null,\r\n      \"Source\": \"Pattern\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"イベント\",\r\n      \"TestItem\": \"保存ボタンクリック\",\r\n      \"Content\": \"入力検証\",\r\n      \"WhatToCheck\": \"社員NOに5桁未満の値が入力されている場合エラーとなる\",\r\n      \"Note\": null,\r\n      \"Source\": \"Pattern\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"イベント\",\r\n      \"TestItem\": \"保存ボタンクリック\",\r\n      \"Content\": \"入力検証\",\r\n      \"WhatToCheck\": \"管理NOに数字以外が入力されている場合エラーとなる\",\r\n      \"Note\": null,\r\n      \"Source\": \"Pattern\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"イベント\",\r\n      \"TestItem\": \"削除ボタンクリック\",\r\n      \"Content\": \"選択処理\",\r\n      \"WhatToCheck\": \"明細行の左端が選択表示となる\",\r\n      \"Note\": null,\r\n      \"Source\": \"Pattern\"\r\n    },\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"Category\": \"イベント\",\r\n      \"TestItem\": \"削除ボタンクリック\",\r\n      \"Content\": \"画面遷移\",\r\n      \"WhatToCheck\": \"明細画面が新規登録モードで起動する\",\r\n      \"Note\": null,\r\n      \"Source\": \"Pattern\"\r\n    }\r\n  ]\r\n}",
+        "CreatedUser": "amimata",
+        "CreatedDate": "2015-06-05 15:08:54.2880712 +07:00",
+        "UpdatedUser": null,
+        "UpdatedDate": null,
+        "ts": "AAAAAAAAB9Q="
+    },
+     {
+        "ProjectItemId": 10,
+        "ProjectId": 1,
+        "Name": "Test Case Of Page 0",
+        "ProjectItemType": "TestResult",
+        "Note": null,
+        "Detail": "{\"TestCase\":\"Test Case Of Page\",\"Tester\":\"amimata\",\"TestDateTime\":\"2015-06-09T00:30:08.2229431+09:00\",\"Name\":\"Test Case Of Page 0\",\"Note\":null,\"ItemType\":\"TestResult\",\"SourcePattern\":null,\"SourcePage\":null,\"Items\":[{\"Result\":null,\"ID\":\"00000000-0000-0000-0000-000000000000\",\"Category\":\"画面表示\",\"TestItem\":\"初期表示\",\"Content\":\"Name\",\"WhatToCheck\":\"Name Default Value is default\",\"Note\":null,\"Source\":\"Page\"},{\"Result\":null,\"ID\":\"00000000-0000-0000-0000-000000000000\",\"Category\":\"画面表示\",\"TestItem\":\"初期表示\",\"Content\":\"Name\",\"WhatToCheck\":\"Name Default Value is NA\",\"Note\":null,\"Source\":\"Page\"},{\"Result\":null,\"ID\":\"00000000-0000-0000-0000-000000000000\",\"Category\":\"画面表示\",\"TestItem\":\"初期表示\",\"Content\":\"Name\",\"WhatToCheck\":\"Name Default Value is NA\",\"Note\":null,\"Source\":\"Page\"},{\"Result\":null,\"ID\":\"00000000-0000-0000-0000-000000000000\",\"Category\":\"画面表示\",\"TestItem\":\"初期表示\",\"Content\":\"明細行\",\"WhatToCheck\":\"ヘッダー行を表示\",\"Note\":null,\"Source\":\"Pattern\"},{\"Result\":null,\"ID\":\"00000000-0000-0000-0000-000000000000\",\"Category\":\"画面表示\",\"TestItem\":\"初期表示\",\"Content\":\"ウィンドウタイトル\",\"WhatToCheck\":\"「002_旅費申請検索」と表示される\",\"Note\":null,\"Source\":\"Pattern\"},{\"Result\":null,\"ID\":\"00000000-0000-0000-0000-000000000000\",\"Category\":\"画面表示\",\"TestItem\":\"初期表示\",\"Content\":\"明細行\",\"WhatToCheck\":\"ヘッダー行を表示\",\"Note\":null,\"Source\":\"Pattern\"},{\"Result\":null,\"ID\":\"00000000-0000-0000-0000-000000000000\",\"Category\":\"画面表示\",\"TestItem\":\"初期表示\",\"Content\":\"次を検索\",\"WhatToCheck\":\"非表示\",\"Note\":null,\"Source\":\"Pattern\"},{\"Result\":null,\"ID\":\"00000000-0000-0000-0000-000000000000\",\"Category\":\"画面表示\",\"TestItem\":\"初期表示\",\"Content\":\"明細行\",\"WhatToCheck\":\"ヘッダー行の下にスクロールバーを表示\",\"Note\":null,\"Source\":\"Pattern\"},{\"Result\":null,\"ID\":\"00000000-0000-0000-0000-000000000000\",\"Category\":\"画面表示\",\"TestItem\":\"初期表示\",\"Content\":\"明細行\",\"WhatToCheck\":\"ヘッダー行の下にスクロールバーを表示\",\"Note\":null,\"Source\":\"Pattern\"},{\"Result\":null,\"ID\":\"00000000-0000-0000-0000-000000000000\",\"Category\":\"イベント\",\"TestItem\":\"検索ボタンクリック\",\"Content\":\"ID\",\"WhatToCheck\":\"ID is required\",\"Note\":null,\"Source\":\"Page\"},{\"Result\":null,\"ID\":\"00000000-0000-0000-0000-000000000000\",\"Category\":\"イベント\",\"TestItem\":\"検索ボタンクリック\",\"Content\":\"Name\",\"WhatToCheck\":\"MaxLength of Name is 50\",\"Note\":null,\"Source\":\"Page\"},{\"Result\":null,\"ID\":\"00000000-0000-0000-0000-000000000000\",\"Category\":\"イベント\",\"TestItem\":\"検索ボタンクリック\",\"Content\":\"Name\",\"WhatToCheck\":\"MinLength of Name is 2\",\"Note\":null,\"Source\":\"Page\"},{\"Result\":null,\"ID\":\"00000000-0000-0000-0000-000000000000\",\"Category\":\"イベント\",\"TestItem\":\"検索ボタンクリック\",\"Content\":\"Birthday\",\"WhatToCheck\":\"Birthday is required\",\"Note\":null,\"Source\":\"Page\"},{\"Result\":null,\"ID\":\"00000000-0000-0000-0000-000000000000\",\"Category\":\"イベント\",\"TestItem\":\"検索ボタンクリック\",\"Content\":\"ID\",\"WhatToCheck\":\"ID is required\",\"Note\":null,\"Source\":\"Page\"},{\"Result\":null,\"ID\":\"00000000-0000-0000-0000-000000000000\",\"Category\":\"イベント\",\"TestItem\":\"検索ボタンクリック\",\"Content\":\"Name\",\"WhatToCheck\":\"MaxLength of Name is 50\",\"Note\":null,\"Source\":\"Page\"},{\"Result\":null,\"ID\":\"00000000-0000-0000-0000-000000000000\",\"Category\":\"イベント\",\"TestItem\":\"検索ボタンクリック\",\"Content\":\"Name\",\"WhatToCheck\":\"MinLength of Name is 5\",\"Note\":null,\"Source\":\"Page\"},{\"Result\":null,\"ID\":\"00000000-0000-0000-0000-000000000000\",\"Category\":\"イベント\",\"TestItem\":\"検索ボタンクリック\",\"Content\":\"Birthday\",\"WhatToCheck\":\"Birthday is required\",\"Note\":null,\"Source\":\"Page\"},{\"Result\":null,\"ID\":\"00000000-0000-0000-0000-000000000000\",\"Category\":\"イベント\",\"TestItem\":\"検索ボタンクリック\",\"Content\":\"ID\",\"WhatToCheck\":\"ID is required\",\"Note\":null,\"Source\":\"Page\"},{\"Result\":null,\"ID\":\"00000000-0000-0000-0000-000000000000\",\"Category\":\"イベント\",\"TestItem\":\"検索ボタンクリック\",\"Content\":\"Name\",\"WhatToCheck\":\"MaxLength of Name is 50\",\"Note\":null,\"Source\":\"Page\"},{\"Result\":null,\"ID\":\"00000000-0000-0000-0000-000000000000\",\"Category\":\"イベント\",\"TestItem\":\"検索ボタンクリック\",\"Content\":\"Name\",\"WhatToCheck\":\"MinLength of Name is 5\",\"Note\":null,\"Source\":\"Page\"},{\"Result\":null,\"ID\":\"00000000-0000-0000-0000-000000000000\",\"Category\":\"イベント\",\"TestItem\":\"検索ボタンクリック\",\"Content\":\"入力検証\",\"WhatToCheck\":\"社員NOに5桁未満の値が入力されている場合エラーとなる\",\"Note\":null,\"Source\":\"Pattern\"},{\"Result\":null,\"ID\":\"00000000-0000-0000-0000-000000000000\",\"Category\":\"イベント\",\"TestItem\":\"保存ボタンクリック\",\"Content\":\"入力検証\",\"WhatToCheck\":\"社員NOに5桁未満の値が入力されている場合エラーとなる\",\"Note\":null,\"Source\":\"Pattern\"},{\"Result\":null,\"ID\":\"00000000-0000-0000-0000-000000000000\",\"Category\":\"イベント\",\"TestItem\":\"保存ボタンクリック\",\"Content\":\"入力検証\",\"WhatToCheck\":\"管理NOに数字以外が入力されている場合エラーとなる\",\"Note\":null,\"Source\":\"Pattern\"},{\"Result\":null,\"ID\":\"00000000-0000-0000-0000-000000000000\",\"Category\":\"イベント\",\"TestItem\":\"削除ボタンクリック\",\"Content\":\"選択処理\",\"WhatToCheck\":\"明細行の左端が選択表示となる\",\"Note\":null,\"Source\":\"Pattern\"},{\"Result\":null,\"ID\":\"00000000-0000-0000-0000-000000000000\",\"Category\":\"イベント\",\"TestItem\":\"削除ボタンクリック\",\"Content\":\"画面遷移\",\"WhatToCheck\":\"明細画面が新規登録モードで起動する\",\"Note\":null,\"Source\":\"Pattern\"}]}",
+        "CreatedUser": "amimata",
+        "CreatedDate": "2015-06-05 15:08:54.2880712 +07:00",
+        "UpdatedUser": null,
+        "UpdatedDate": null,
+        "ts": "AAAAAAAAB9Q="
+    }
+]

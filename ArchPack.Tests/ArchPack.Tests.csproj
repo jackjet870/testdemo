@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\xunit.runner.visualstudio.2.0.1\build\net20\xunit.runner.visualstudio.props" Condition="Exists('..\packages\xunit.runner.visualstudio.2.0.1\build\net20\xunit.runner.visualstudio.props')" />
+  <Import Project="..\packages\xunit.core.2.0.0\build\portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\xunit.core.props" Condition="Exists('..\packages\xunit.core.2.0.0\build\portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\xunit.core.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A7E98604-B1AB-4B27-9C44-C2D51EB369E3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ArchPack.Tests</RootNamespace>
+    <AssemblyName>ArchPack.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>6e1e87be</NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory, Version=2.18.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Clients.ActiveDirectory.2.18.206251556\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms, Version=2.18.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Clients.ActiveDirectory.2.18.206251556\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.OData.Core">
+      <HintPath>..\packages\Microsoft.OData.Core.6.5.0\lib\portable-net40+sl5+wp8+win8+wpa\Microsoft.OData.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.OData.Edm">
+      <HintPath>..\packages\Microsoft.OData.Edm.6.5.0\lib\portable-net40+sl5+wp8+win8+wpa\Microsoft.OData.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.HttpListener, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.HttpListener.3.0.1\lib\net45\Microsoft.Owin.Host.HttpListener.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Hosting">
+      <HintPath>..\packages\Microsoft.Owin.Hosting.3.0.1\lib\net45\Microsoft.Owin.Hosting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Testing">
+      <HintPath>..\packages\Microsoft.Owin.Testing.3.0.1\lib\net45\Microsoft.Owin.Testing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Spatial">
+      <HintPath>..\packages\Microsoft.Spatial.6.5.0\lib\portable-net40+sl5+wp8+win8+wpa\Microsoft.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.2.1502.0911\lib\net40\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.5\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>..\packages\NLog.3.2.0.0\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.12.1.2400\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess.EntityFramework, Version=6.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.EntityFramework.12.1.2400\lib\net45\Oracle.ManagedDataAccess.EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.OData, Version=5.3.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.OData.5.3.1\lib\net45\System.Web.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.2.0.0\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="xunit.abstractions">
+      <HintPath>..\packages\xunit.abstractions.2.0.0\lib\net35\xunit.abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.assert">
+      <HintPath>..\packages\xunit.assert.2.0.0\lib\portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\xunit.assert.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.core">
+      <HintPath>..\packages\xunit.extensibility.core.2.0.0\lib\portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\xunit.core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise />
+  </Choose>
+  <ItemGroup>
+    <Compile Include="ArchUnits\Collections\V1\IEnumerableExtensionsTest.cs" />
+    <Compile Include="ArchUnits\Contracts\V1\ContractTest.cs" />
+    <Compile Include="ArchUnits\Cryptography\V1\TripleDESCryptDataTest.cs" />
+    <Compile Include="ArchUnits\Entities\V1\DbContextExtensionsTest.cs" />
+    <Compile Include="ArchUnits\Path\V1\PathDataTest.cs" />
+    <Compile Include="ArchUnits\Path\V1\PathInfoBuilderTest.cs" />
+    <Compile Include="ArchUnits\Path\V1\PathMapResultTEst.cs" />
+    <Compile Include="ArchUnits\Pipeline\V1\PipeContextTest.cs" />
+    <Compile Include="ArchUnits\Pipeline\V1\PipeTest.cs" />
+    <Compile Include="ArchUnits\Pipeline\V1\ValidationPipeActionTest.cs" />
+    <Compile Include="ArchUnits\Routing.General\V1\GeneralProcessResolverTest.cs" />
+    <Compile Include="ArchUnits\Routing.Owin\V1\ServiceUnitMiddlewareExtensionTest.cs" />
+    <Compile Include="ArchUnits\Routing.Resource.Owin\V1\ServiceUnitResourceTest.cs" />
+    <Compile Include="ArchUnits\Routing.Resource\V1\ResourceProcessResolverTest.cs" />
+    <Compile Include="ArchUnits\Routing.WebApi.Owin\V1\ServiceUnitWebApiTest.cs" />
+    <Compile Include="ArchUnits\Routing.WebApi\V1\ApiExceptionHandlerTest.cs" />
+    <Compile Include="ArchUnits\Routing.WebApi\V1\WebApiProcessResolverTest.cs" />
+    <Compile Include="ArchUnits\Routing.WebForm.Owin\V1\ServiceUnitFormTest.cs" />
+    <Compile Include="ArchUnits\Routing.WebForm\V1\WebFormProcessResolverTest.cs" />
+    <Compile Include="ArchUnits\Routing\V1\ServiceUnitContextTest.cs" />
+    <Compile Include="ArchUnits\Routing\V1\ServiceUnitRequestTest.cs" />
+    <Compile Include="ArchUnits\Routing\V1\TypePathItemTest.cs" />
+    <Compile Include="ArchUnits\Routing\V1\TypePathTest.cs" />
+    <Compile Include="ArchUnits\Routing\V1\UriResolverTest.cs" />
+    <Compile Include="ArchUnits\Validations\V1\ValidationExtensionsTest.cs" />
+    <Compile Include="ArchUnits\Validations\V1\ValidationResultExtensionsTest.cs" />
+    <Compile Include="ArchUnits\Validations\V1\ValidationResultTest.cs" />
+    <Compile Include="ArchUnits\Validations\V1\ValidationRulesTest.cs" />
+    <Compile Include="ArchUnits\WebApiExtensions\V1\DateTimeExtensionsTest.cs" />
+    <Compile Include="ArchUnits\WebApiExtensions\V1\FileHttpRequestMessageExtensionsTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Root.cs" />
+    <Compile Include="ServiceUnits\Test\V1\Data\Accounts.cs" />
+    <Compile Include="ServiceUnits\Test\V1\Data\AuthSampleEntities.cs" />
+    <Compile Include="ServiceUnits\Test\V1\Data\AuthSampleEntities.partial.cs" />
+    <Compile Include="ServiceUnits\Test\V1\Data\Constants.cs" />
+    <Compile Include="ServiceUnits\Test\V1\Data\Employees.cs" />
+    <Compile Include="ServiceUnits\Test\V1\Data\GenerationToolEntities.cs" />
+    <Compile Include="ServiceUnits\Test\V1\Data\GenerationToolEntities.partial.cs" />
+    <Compile Include="ServiceUnits\Test\V1\Data\Profiles.cs" />
+    <Compile Include="ServiceUnits\Test\V1\Data\Project.cs" />
+    <Compile Include="ServiceUnits\Test\V1\Data\ProjectItem.cs" />
+    <Compile Include="ServiceUnits\Test\V1\Data\Roles.cs" />
+    <Compile Include="ServiceUnits\Test\V1\Data\RolesInUsersView.cs" />
+    <Compile Include="ServiceUnits\Test\V1\Data\SharedMastersEntities.cs" />
+    <Compile Include="ServiceUnits\Test\V1\Data\TestEntities.cs" />
+    <Compile Include="ServiceUnits\Test\V1\Data\Units.cs" />
+    <Compile Include="ServiceUnits\Test\V1\Data\Users.cs" />
+    <Compile Include="ServiceUnits\Test\V1\Data\UsersInRoles.cs" />
+    <Compile Include="ServiceUnits\Test\V1\Data\UsersInRolesView.cs" />
+    <Compile Include="ServiceUnits\Test\V1\Data\UsersView.cs" />
+    <Compile Include="ServiceUnits\Test\V1\Data\Utils.cs" />
+    <Compile Include="ServiceUnits\Test\V1\Lib\GeneralMethods.cs" />
+    <Compile Include="ServiceUnits\Test\V1\Resources\StringContents.Designer.cs" />
+    <Compile Include="ServiceUnits\Test\V1\Users\Api\UnitsController.cs" />
+    <Compile Include="TestUnits\Helpers\V1\ContainerHelper.cs" />
+    <Compile Include="TestUnits\Helpers\V1\DataPatternTestCaseHelper.cs" />
+    <Compile Include="TestUnits\Helpers\V1\SqlExceptionHelper.cs" />
+    <Compile Include="TestUnits\Helpers\V1\TestDataHelper.cs" />
+    <Compile Include="TestUnits\Helpers\V1\UnitTestHelper.cs" />
+    <Compile Include="TestUnits\Shim\V1\TestEnvironment.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ServiceUnits\Test\V1\Resources\StringContents.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ServiceUnits\Test\V1\Admin\Data\DependChild1.sql" />
+    <Content Include="ServiceUnits\Test\V1\Admin\Data\DependChild11.sql" />
+    <Content Include="ServiceUnits\Test\V1\Admin\Data\DependChild2_3.sql" />
+    <Content Include="ServiceUnits\Test\V1\Admin\Data\DependRoot1.sql" />
+    <Content Include="ServiceUnits\Test\V1\Admin\Data\DependRoot2.sql" />
+    <Content Include="ServiceUnits\Test\V1\Admin\Data\DependRoot3.sql" />
+    <Content Include="ServiceUnits\Test\V1\Admin\Data\DependRoot4.sql" />
+    <Content Include="ServiceUnits\Test\V1\Admin\Data\DependRoot5.sql" />
+    <Content Include="ServiceUnits\Test\V1\Admin\Data\DependRoot6.sql" />
+    <Content Include="ServiceUnits\Test\V1\Admin\Data\DependWhere.sql" />
+    <Content Include="ServiceUnits\Test\V1\Admin\Data\FromClause.sql" />
+    <Content Include="ServiceUnits\Test\V1\Admin\Data\FromClause2.sql" />
+    <Content Include="ServiceUnits\Test\V1\Admin\Data\FromClauseWithReplace.sql" />
+    <Content Include="ServiceUnits\Test\V1\Admin\Data\ReplaceParameter.sql" />
+    <Content Include="ServiceUnits\Test\V1\Admin\Data\Select.sql" />
+    <Content Include="ServiceUnits\Test\V1\Admin\Data\SelectWithJoin.sql" />
+    <Content Include="ServiceUnits\Test\V1\Admin\Data\SelectWithoutParameter.sql" />
+    <Content Include="ServiceUnits\Test\V1\Admin\Data\Update.sql" />
+    <Content Include="ServiceUnits\Test\V1\Admin\Data\WhereClause.sql" />
+    <Content Include="ServiceUnits\Test\V1\Admin\Data\WhereClauseWithReplace.sql" />
+    <None Include="App.Debug.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.Release.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <Content Include="service-config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="ServiceUnits\service-config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ServiceUnits\Test\V1\Data\Json\Account.json" />
+    <None Include="ServiceUnits\Test\V1\Data\Json\jsonSchemaApi.json" />
+    <None Include="ServiceUnits\Test\V1\Data\Json\jsonSchemaDataModel.json" />
+    <None Include="ServiceUnits\Test\V1\Data\Json\jsonSchemaPageDetail.json" />
+    <None Include="ServiceUnits\Test\V1\Data\Json\jsonSchemaTestCase.json" />
+    <None Include="ServiceUnits\Test\V1\Data\Json\jsonSchemaTestCaseResult.json" />
+    <None Include="ServiceUnits\Test\V1\Data\Json\jsonSchemaUIPattern.json" />
+    <None Include="ServiceUnits\Test\V1\Data\Json\ProjectItems.json" />
+    <None Include="ServiceUnits\Test\V1\Data\Json\Projects.json" />
+    <None Include="ServiceUnits\Test\V1\service-config.Test.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ServiceUnits\Test\V1\Users\service-config.Test.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ArchPack\ArchPack.csproj">
+      <Project>{d63d139d-f2d0-45dd-915f-2d74dd9d38e8}</Project>
+      <Name>ArchPack</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ServiceUnits\Test\V1\log\" />
+    <Folder Include="ServiceUnits\Test\V1\Users\Pages\" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>このプロジェクトは、このコンピューターにはない NuGet パッケージを参照しています。これらをダウンロードするには、NuGet パッケージの復元を有効にしてください。詳細については、http://go.microsoft.com/fwlink/?LinkID=322105 を参照してください。不足しているファイルは {0} です。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+    <Error Condition="!Exists('..\packages\xunit.core.2.0.0\build\portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\xunit.core.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.core.2.0.0\build\portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\xunit.core.props'))" />
+    <Error Condition="!Exists('..\packages\xunit.runner.visualstudio.2.0.1\build\net20\xunit.runner.visualstudio.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.runner.visualstudio.2.0.1\build\net20\xunit.runner.visualstudio.props'))" />
+  </Target>
+  <UsingTask TaskName="TransformXml" AssemblyFile="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Web\Microsoft.Web.Publishing.Tasks.dll" />
+  <Target Name="AfterCompile" Condition="exists('app.$(Configuration).config')">
+    <TransformXml Source="App.config" Destination="$(IntermediateOutputPath)$(TargetFileName).config" Transform="App.$(Configuration).config" />
+    <ItemGroup>
+      <AppConfigWithTargetPath Remove="App.config" />
+      <AppConfigWithTargetPath Include="$(IntermediateOutputPath)$(TargetFileName).config">
+        <TargetPath>$(TargetFileName).config</TargetPath>
+      </AppConfigWithTargetPath>
+    </ItemGroup>
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

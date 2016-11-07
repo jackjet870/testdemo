@@ -1,0 +1,31 @@
+﻿{
+    "title": "",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "Name": { "type": "string" },
+        "Note": { "type": [ "string", "null" ] },
+        "ItemType": { "type": "string" },
+        "SourcePattern": { "type": [ "string", "null" ] },
+        "SourcePage": { "type": [ "string", "null" ] },
+        "TestCase": { "type": "string" },
+        "Tester": { "type": [ "string", "null" ] },
+        "TestDateTime": { "type": [ "string", "null" ], "format": "date-time" },
+        "Items": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "ID": { "type": "string" },
+                    "Category": { "type": [ "string", "null" ] },
+                    "TestItem": { "type": [ "string", "null" ] },
+                    "Content": { "type": [ "string", "null" ] },
+                    "WhatToCheck": { "type": [ "string", "null" ] },
+                    "Source": { "type": [ "string", "null" ] },
+                    "Result": { "type": [ "string", "null" ] },
+                    "Note": { "type": [ "string", "null" ] }
+                }
+            }
+        }
+    }
+}

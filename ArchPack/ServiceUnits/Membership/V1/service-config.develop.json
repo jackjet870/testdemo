@@ -1,0 +1,27 @@
+﻿{
+    "name": "membership",
+    "version": "0.0.1",
+    "unavailable": false,
+    "display": "Version 1",
+    "items": [
+    ],
+    "connectionStrings": {
+        "AuthSampleEntities": "data source=.\\SQLEXPRESS;initial catalog=AuthSample;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework"
+    },
+    "errorPages": {
+        "500": {
+            "redirectMode": "Rewrite",
+            "url": "~/ServiceUnits/Shared/V1/Anonymous/Pages/500.aspx"
+        },
+        "404": { 
+            "redirectMode": "Rewrite",
+            "url": "~/ServiceUnits/Shared/V1/Anonymous/Pages/404.aspx",
+            "redirectUrl": "~/Membership/V1/Users/Page/UserSearchList"
+        },
+        "401": { 
+            "redirectMode": "Rewrite",
+            "url": "~/ServiceUnits/Shared/V1/Anonymous/Pages/401.aspx",
+            "redirectUrl": "~/Membership/V1/Users/Page/UserSearchList"
+        }
+    }
+}

@@ -1,0 +1,63 @@
+﻿{
+    "authProviders": [
+        "db",
+        "azuread",
+        "ad"
+    ],
+    "authDomain": "ARCHWAY",
+    "azureAdSettings": {
+        "clientId": "34136063-1a12-4cde-b1aa-88fbb033b487",
+        "aadInstance": "https://login.microsoftonline.com/{0}",
+        "tenant": "c68ee234-2c70-4bb4-b824-641e97394d0d",
+        "postLogoutRedirectUri": "http://localhost:3034/",
+        "appKey": "7AwDaWZ71trpgNdKKLP4b9t/jsH6tY4RyW82+ebijqE=",
+        "resourceId": "https://archway.co.jp/ArchPack",
+        "graphResourceId": "https://graph.windows.net"
+    },
+    "loginPage": "/Login",
+    "defaultPage": "~/Shared/V1/Users/page/Default",
+    "logSettings": [
+        {
+            "uri": "/",
+            "resource": {
+                "type": "file",
+                "filename": "ServiceUnits/Test/V1/log/trace-${shortdate}.log",
+                "name": "trace",
+                "level": "trace",
+                "format": "[${longdate}][${event-context:item=logid}][${level:uppercase=true}] User:${event-context:item=user} Uri:${event-context:item=uri} ${message} ${exception:format=tostring}",
+                "connection": ""
+            }
+        },
+        {
+            "uri": "/",
+            "resource": {
+                "type": "file",
+                "filename": "ServiceUnits/Test/V1/log/error-${shortdate}.log",
+                "name": "error",
+                "level": "error",
+                "format": "[${longdate}][${event-context:item=logid}][${level:uppercase=true}] User:${event-context:item=user} Uri:${event-context:item=uri} ${message} ${exception:format=tostring}",
+                "connection": ""
+            }
+        },
+        {
+            "uri": "/",
+            "resource": {
+                "type": "file",
+                "filename": "ServiceUnits/Test/V1/log/audit-${shortdate}.log",
+                "name": "audit",
+                "level": "info",
+                "format": "[${longdate}][${event-context:item=logid}][${level:uppercase=true}] User:${event-context:item=user} Uri:${event-context:item=uri} ${message}",
+                "connection": ""
+            }
+        },
+        {
+            "uri": "/",
+            "resource": {
+                "type": "ArcsAudit",
+                "name": "ArcsAudit",
+                "level": "trace",
+                "connection": "Provider=OraOLEDB.Oracle;Data Source=ORCL10;User Id=R40UT;Password=archway;OLEDB.NET=True;"
+            }
+        }
+    ]
+}

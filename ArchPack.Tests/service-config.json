@@ -1,0 +1,153 @@
+﻿{
+    "availableRoles": [
+        "Admin",
+        "Users",
+        "Anonymous"
+    ],
+    "connectionStrings": {
+    },
+    "appSettings": {
+        "pdfServiceUrl": "http://localhost:27925/PdfServiceEx.asmx",
+        "pdfMaxSize": 10485760
+    },
+    "codeMap": [        
+        {
+            "name": "String",
+            "replace": [
+                {
+                    "key": { "GroupId": "001", "ItemId": "001" },
+                    "value": { "Name1": "保留", "Name2": "審査待ち", "Code1": "A002" }
+                },
+                {
+                    "key": { "GroupId": "001", "ItemId": "002" },
+                    "value": { "Name2": "審査待ち", "Code2": "A002" }
+                }
+            ],
+            "hidden": [
+                {
+                    "key": { "GroupId": "001", "ItemId": "003" }
+                },
+                {
+                    "key": { "GroupId": "001", "ItemId": "004" }
+                }
+            ]
+        },
+        {
+            "name": "Int",
+            "replace": [
+                {
+                    "key": { "GroupId": 1, "ItemId": "1" },
+                    "value": { "Name1": "保留", "Name2": 2, "Code1": "A002" }
+                }
+            ],
+            "hidden": [
+                {
+                    "key": { "GroupId": "001", "ItemId": "003" }
+                }
+            ]
+        },
+        {
+            "name": "Decimal",
+            "replace": [
+                {
+                    "key": { "GroupId": "2.53", "ItemId": "1.05" },
+                    "value": { "Name1": 3.05, "Name2": 2.05, "Code1": "A002" }
+                }
+            ],
+            "hidden": [
+                {
+                    "key": { "GroupId": "001", "ItemId": "003" }
+                }
+            ]
+        },
+        {
+            "name": "Object",
+            "replace": [
+                {
+                    "key": { "GroupId": { "HomeID": 1, "OfficeId": 2 }, "ItemId": "1.05" },
+                    "value": { "Name1": 3.05, "Name2": 2.05, "Code1": "A002" }
+                }
+            ],
+            "hidden": [
+                {
+                    "key": { "GroupId": "001", "ItemId": "003" }
+                }
+            ]
+        },
+        {
+            "name": "IntUnSet",
+            "replace": [
+                {
+                    "key": { "GroupId": 1, "ItemId": 1 },
+                    "value": { "Name1": "保留", "Name2": "ABC", "Code1": "A002" }
+                }
+            ],
+            "hidden": [
+                {
+                    "key": { "GroupId": "001", "ItemId": "003" }
+                }
+            ]
+        },
+        {
+            "name": "nullreplace",
+            "replace": null,
+            "hidden": [ ]
+        },
+        {
+            "name": "replacewithkeynull",
+            "replace": [
+                {
+                    "key": null,
+                    "value": { "Name1": "保留", "Name2": "ABC", "Code1": "A002" }
+                }
+            ],
+            "hidden": [ ]
+        },
+        {
+            "name": "replacewithvaluenull",
+            "replace": [
+                {
+                    "key": { "GroupId": "001", "ItemId": "001" },
+                    "value": null
+                }
+            ],
+            "hidden": [ ]
+        },
+        {
+            "name": "replace1value",
+            "replace": [
+                {
+                    "key": { "GroupId": "001", "ItemId": "001" },
+                    "value": { "Name1": "保留" }
+                }
+            ],
+            "hidden": [ ]
+        },
+        {
+            "name": "replacemorethan1value",
+            "replace": [
+                {
+                    "key": { "GroupId": "001", "ItemId": "001" },
+                    "value": { "Name1": "保留", "Name2": "審査待ち" }
+                }
+            ],
+            "hidden": [ ]
+        },
+        {
+            "name": "ReplaceAndHidden",
+            "replace": [
+                {
+                    "key": { "GroupId": "001", "ItemId": "003" },
+                    "value": { "Name1": "保留", "Name2": "審査待ち" }
+                }
+            ],
+            "hidden": [
+                {
+                    "key": { "GroupId": "001", "ItemId": "003" }
+                }
+            ]
+        }
+
+    ]
+    
+}

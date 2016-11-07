@@ -1,0 +1,55 @@
+﻿{
+    "description": "",
+    "type": "object",
+    "properties": {
+        "Name": { "type": "string" },
+        "Note": { "type": "string" },
+        "ItemType": { "type": "string" },
+        "DisplaySections": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Name": { "type": "string" },
+                    "DisplayItemType": { "type": "string" }
+                }
+            }
+        },
+        "Items": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Name": { "type": "string" },
+                    "HtmlTemplate": {
+                        "type": "object",
+                        "properties": {
+                            "Files": {
+                                "type": "array",
+                                "items": { "type": "string" }
+                            }
+                        }
+                    },
+                    "JsTemplate": {
+                        "type": "object",
+                        "properties": {
+                            "Files": {
+                                "type": "array",
+                                "items": { "type": "string" }
+                            }
+                        }
+                    },
+                    "TestCaseTemplate": {
+                        "type": "object",
+                        "properties": {
+                            "Cases": {
+                                "type": "array",
+                                "items": {"type": "object"}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

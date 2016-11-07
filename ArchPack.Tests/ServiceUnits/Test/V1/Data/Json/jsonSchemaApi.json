@@ -1,0 +1,40 @@
+﻿{
+    "title": "JsonSchema of Api",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "Name": { "type": "string" },
+        "Note": { "type": [ "string", "null" ] },
+        "SourcePattern": { "type": "string" },
+        "ItemType": { "type": "string" },
+        "Actions": {
+            "type": [ "array", "null" ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Name": { "type": "string" },
+                    "DisplayName": { "type": [ "string", "null" ] },
+                    "Description": { "type": [ "string", "null" ] },
+                    "Source": { "type": [ "string", "null" ] },
+                    "SourceDataModel": {
+                        "type": [ "object", "null" ],
+                        "properties": {
+                            "Name": { "type": [ "string", "null" ] }
+                        }
+                    },
+                    "ApiActionTypes": { "type": [ "string", "null" ] },
+                    "Parameters": {
+                        "type": [ "array", "null" ],
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "Name": { "type": "string" },
+                                "Type": { "type": [ "string", "number", "boolean", "null" ] }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

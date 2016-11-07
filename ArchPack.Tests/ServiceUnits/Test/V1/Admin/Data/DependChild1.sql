@@ -1,0 +1,1 @@
+﻿/** DependOn(DependRoot1) */ DEPEND CHILD1

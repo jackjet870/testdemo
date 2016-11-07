@@ -1,0 +1,18 @@
+﻿{
+    "display": "管理者向け",
+    "unavailable": false,
+    "is_role": true,
+    "items": [
+        {
+            "display": "ユーザー情報検索",
+            "url": "UserSearchList"
+        },
+        {
+            "display": "ロール情報検索編集",
+            "url": "RoleSearchListInput"
+        }
+    ],
+    "dependencies": { 
+
+    }
+}

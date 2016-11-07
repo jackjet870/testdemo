@@ -1,0 +1,22 @@
+﻿[
+    {
+        "ProjectId": 1,
+        "Name": "アプリケーション生成プロジェクト",
+        "Note": "アプリケーションのメタデータを定義し、コードおよびドキュメントを生成するツールを開発します。",
+        "CreatedUser": null,
+        "CreatedDate": null,
+        "UpdatedUser": null,
+        "UpdatedDate": null,
+        "ts": "AAAAAAAAB9c="
+    },
+    {
+        "ProjectId": 2,
+        "Name": "サンプルプロジェクト",
+        "Note": "サンプルのプロジェクトです",
+        "CreatedUser": null,
+        "CreatedDate": null,
+        "UpdatedUser": null,
+        "UpdatedDate": null,
+        "ts": "AAAAAAAAB9g="
+    }
+]

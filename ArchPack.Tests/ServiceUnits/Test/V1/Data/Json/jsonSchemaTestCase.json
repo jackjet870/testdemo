@@ -1,0 +1,27 @@
+﻿{
+    "description": "schema json of TestCase",
+    "type": "object",
+    "properties": {
+        "Name": { "type": "string" },
+        "Note": { "type": [ "string", "null" ] },
+        "ItemType": { "type": "string" },
+        "SourcePattern": { "type": [ "string", "null" ] },
+        "SourcePage": { "type": [ "string", "null" ]},
+        "Items": {
+            "title": "A detail of test case",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "ID": { "type": "string" },
+                    "Category": { "type": [ "string", "null" ] },
+                    "TestItem": { "type": [ "string", "null" ] },
+                    "Content": { "type": [ "string", "null" ] },
+                    "WhatToCheck": { "type": [ "string", "null" ] },
+                    "Note": { "type": [ "string", "null" ] },
+                    "Source": { "type": [ "string", "null" ] }
+                }
+            }
+        }
+    }
+}

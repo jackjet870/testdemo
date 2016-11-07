@@ -1,0 +1,16 @@
+{
+    "unavailable": false,
+    "display": "ユーザー向け",
+    "is_role":  true,
+    "items": [
+        {
+            "display": "ユーザー情報検索",
+            "url": "UserSearchList"
+        },
+        {
+            "display": "ロール情報検索編集",
+            "url": "RoleSearchListInput"
+        }
+    ]
+
+}

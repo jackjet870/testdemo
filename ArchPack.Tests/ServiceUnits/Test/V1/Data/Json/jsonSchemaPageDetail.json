@@ -1,0 +1,128 @@
+﻿{
+    "title": "ProjectItem.Detail",
+    "description": "json schemas of page detail",
+    "type": "object",
+    "properties": {
+        "Name": {
+            "type": "string"
+        },
+        "Note": {
+            "type": [ "string", "null" ]
+        },
+        "SourcePattern": {
+            "type": "string"
+        },
+        "ItemType": {
+            "type": "string"
+        },
+        "DisplaySections": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "type": "string"
+                    },
+                    "DisplayItems": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "Name": {
+                                    "type": "string"
+                                },
+                                "DisplayName": {
+                                    "type": "string"
+                                },
+                                "ControlType": {
+                                    "type": "string"
+                                },
+                                "ReadOnly": {
+                                    "type": [ "string", "null" ]
+                                },
+                                "PageItemType": {
+                                    "type": "string"
+                                },
+                                "DefaultValue": {
+                                    "type": [ "string", "null" ]
+                                },
+                                "Format": {
+                                    "type":  [ "string", "null" ]
+                                },
+                                "ResourceID": {
+                                    "type":  [ "string", "null" ]
+                                },
+                                "SourceDataModel": {
+                                    "type": "object",
+                                    "properties": {
+                                        "Name": {
+                                            "type": [ "string", "null" ]
+                                        },
+                                        "Property": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "Validations": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "ValidationType": {
+                                                "type": "string"
+                                            },
+                                            "Values": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "Message": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "Actions": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Name": { "type": "string" },
+                    "Type": { "type": "string" },
+                    "Trigger": {
+                        "Name": { "type": "string" },
+                        "WhatToDo": { "type": "string" }
+                    },
+                    "ActionItems": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "Name": { "type": "string" },
+                                "Params": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "Name": { "type": "string" },
+                                            "DisplayItemName": { "type": "string" }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+    }

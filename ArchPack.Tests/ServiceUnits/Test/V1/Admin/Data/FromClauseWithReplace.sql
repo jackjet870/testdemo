@@ -1,0 +1,1 @@
+﻿INNER JOIN B ON B.ID IN (/*{0}*/)

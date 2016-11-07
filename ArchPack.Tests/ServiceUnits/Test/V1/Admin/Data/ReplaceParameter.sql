@@ -1,0 +1,1 @@
+SELECT * FROM DUAL WHERE AAA /*{0}*/ IN (/*{1}*/) AND BBB = '{0}' --/*{2:yyyy/MM/dd}*/ --/*{12}*/ --/*{21:#,#}*/ --/*{0}*/
